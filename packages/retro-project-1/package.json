@@ -1,9 +1,11 @@
 {
   "name": "project1",
-  "version": "1.0.6",
+  "version": "1.0.9",
   "description": "",
   "main": "./index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "av auto"
+  },
   "author": "zhangziliang <zhangziliang@shining3d.com> (https://github.com/royJang)",
   "license": "ISC",
   "publishConfig": {
