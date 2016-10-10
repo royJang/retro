@@ -1,15 +1,16 @@
 {
-    "name": "retro-project-1",
-    "version": "2.0.2",
-    "private": true,
-    "scripts": {
-        "build": "av auto;"
-    },
-    "devDependencies": {},
-    "publishConfig": {
-        "registry": "https://repo.3dker.cn/repository/private-npm/"
-    },
-    "dependencies": {
-        "vue": "^2.0.1"
-    }
+  "name": "retro-project-1",
+  "version": "2.0.5",
+  "private": true,
+  "scripts": {
+    "build": "av auto;"
+  },
+  "devDependencies": {},
+  "publishConfig": {
+    "registry": "https://repo.3dker.cn/repository/private-npm/"
+  },
+  "dependencies": {
+    "lodash": "^4.16.4",
+    "vue": "^2.0.1"
+  }
 }

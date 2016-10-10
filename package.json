@@ -1,15 +1,24 @@
 {
   "name": "retro",
-  "version": "0.0.0",
   "private": true,
-  "scripts": {
-    "dev": "node build/dev-server.js",
-    "build": "rimraf dist && mkdirp dist && ncp statics dist/statics && cross-env NODE_ENV=production webpack --progress --hide-modules --config build/webpack.prod.conf.js;"
-  },
   "devDependencies": {
-    "lerna": "2.0.0-beta.29"
+    "cz-lerna-changelog": "^0.3.0",
+    "lerna": "2.0.0-beta.29",
+    "semantic-release": "^4.3.5"
   },
   "publishConfig": {
     "registry": "https://repo.3dker.cn/repository/private-npm/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/royJang/retro.git"
+  },
+  "scripts": {
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
   }
 }
